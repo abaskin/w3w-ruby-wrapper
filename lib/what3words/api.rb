@@ -128,7 +128,7 @@ module What3Words
       if response["code"].to_s.strip != ""
         raise ResponseError, "#{response["code"]}: #{response["message"]}"
       end
-      deep_symbolize_keys(response)
+      # deep_symbolize_keys(response)
     end
     private :request!
 
